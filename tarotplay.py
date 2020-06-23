@@ -1,3 +1,20 @@
+'''
+Author: thelotech
+Last Edited: 06/23/2020
+Summary: Creating a Tarot Card program with the following pulls:
+- Card of the Day
+- Three Card Pull
+- Card Description 
+'''
+
+# # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # #
+# # 										  # # 
+# #  ACE'S SUPER AWESOME TAROT CARD PROGRAM   # # 
+# # 										  # #
+# # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # #
+
 # Importing the 'random' module we will need for drawing a random card.
 import random
 
@@ -35,7 +52,7 @@ majorArcana = [
 # Minor Arcana list created by making two lists, then generating 
 # a list of all possible combinations to make the deck.
 # ---------------------------------------------------------------
-minorArcanaNumber = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Page', 'Knight', 'Queen', 'King']
+minorArcanaNumber = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Page', 'Knight', 'Queen', 'King']
 minorArcanaSuit = ['Cups', 'Pentacles', 'Swords', 'Wands']
 minorArcana = []
 
@@ -57,4 +74,7 @@ tarotDeck = minorArcana + majorArcana
 # ------------------------------------
 input('Hit ENTER to draw a Tarot Card!')
 print(' ')
-print('Your Card of the Day is the',random.choice(tarotDeck))
+print('Your Card of the Day is the',random.choice(tarotDeck),'!')
+print(' ')
+print(' ')
+
